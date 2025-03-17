@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Generador de Números</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="inicio">
+            <h1>
+                <span class="titulo">Generador de números telefónicos aleatorio para USA y Colombia</span>
+ 
+                <span class="imgs1"> <img src="img/customer-service-svgrepo-com.svg" class="img1"> 
+                    <img src="img/customer-service-help-svgrepo-com.svg" class="img2">
+                    <img src="img/at-t-5.svg" class="imgant">
+                    <img src="img/verizon.svg" class="imgverizon">
+                    <img src="img/logo-movistar.svg" class="imgmovistar">
+                    <img src="img/claro-1.svg" class="imgclaro">
+                </span>
+            </h1>   
+            <p class="creditos" ><button id="boton-nextpage"><a href="info.html">Como generar numeros?</a></button> Software developer:<br>ITALO CAHUANA</p>
+            <p class="explicacion">Para generan numeros de Estados Unidos escribe el codigo de área por ejemplo: 212 para New York y luego haz click en el boton para generar numeros de USA.<br>Para Colombia escribe el prefijo del opereador movil por ejemplo: 300 para Tigo y luego haz click en el boton para generar numeros de Colombia.<br>(recuerda en ambos casos son 3 digitos unicamente).</p>
+        </div>
+        <input type="text" id="genera-numeros" placeholder="escribe los 3 dígitos del codigo ó prefijo">
+
+        <div class="usadiv" > 
+            <button id="usa">Click para generar numeros de USA</button>
+        </div>
+        <div class="coldiv" > 
+            <button id="col">Click para generar numeros de Colombia</button>
+            <button id="boton-exportar">Exportar a Excel</button>
+        </div>       
+        
+        <div class="div organizar">
+            <button id="boton-organizador" >Organizar en una columna</button>
+            <button id="boton-eliminar">Eiminar numeros</button>
+
+        </div>
+
+        <ul id="lista-numeros" class="lista"></ul> <!-- Aquí se mostrarán los números, con "ul" (lista desordenanda) -->
+
+        <div id="error-col" class="error col">
+            <p>Introduce un prefijo válido, en colombia los prefijos de operador van del 300 al 351, pero en ese rango hay varios numeros que se omiten, vez a la seccion de "como generar numeros?" para que veas la lista de prefijos validos en Colombia <br>Ó prueba con por ejemplo: 300, 310, 320, 324 etc...</p>
+        </div>
+        <div id="erro-usa" class="error usa">
+            <p>Introduce un codigo de área válido prueba con por ejemplo: 305 ó 786 para Miami, 212 para Manhattan NY, 972 para Texas, 424 para Los Angeles, ó prueba con otros... <br>Explicacion: en Estados Unidos los codigos de área van del 200 al 989 que corresponden a un estado o region, pero en ese rango hay varios numeros que no estan asginados y por lo tanto no son validos, vez a la seccion de "como generar numeros?" para que veas la lista de codigos de área que no estan asigandos a ningun estado.</p>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+        <script type="module" src="js/script.js" ></script>
+        
+    </body>
+
+
+</html>

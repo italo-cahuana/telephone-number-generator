@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de numeros info</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="inicio">
+        <h1>Explicacion de como generar los numero correctamente</h1>
+        <button id="volver"><a href="index.html">VOLVER A LA PAGINA DE INICIO</a></button>
+        <h2>Explicacion para los numeros de Estados Unidos (USA)</h2>    
+            <p>Los números telefónicos en EE.UU. tienen 10 dígitos, divididos principalmente en dos partes:
+            <br>Código de área: 3 dígitos.
+            <br>Número de línea: 7 dígitos.
+            <br>Formato estándar:
+            <br>(XXX) XXX-XXXX
+            <br>Ejemplo: (223) 456-7890.
+            <br>Los 3 primeros dígitos es el codigo de area que representa un estado o region, que son los digitos que usted va tener que ingresar para que luego el programa le genere un numero
+            <br>Esos 3 dígitos solamente van del 201 al 989, pero hay que tener en cuenta algo
+            <br>Dentro de ese rango hay varios numeros que se omiten, es decir que no se usan en USA 
+            <br>Entonces es importante no escribir esos dígitos que no se usan, porque si no el programa detectara que no es un codigo de area valido y no le generara los numeros telefónicos
+            <br>supongamos que solo quiere generar numeros del estado de Florida puede ingrsar el codigo de area: 305 o 786
+            <br>Ahora solo quiere generar numeros de Manhattan New York ingrese el codigo de area: 917 o 212
+            <br>A continuacion se mostrara esos codigos de area que NO son validos para USA y debe evitar escribir para que pueda generar numeros aleatorios:
+            <br>200, 211, 222, 230, 242, 246, 250, 254, 266, 277, 288, 299, 300, 311, 322, 333, 344, 355, 366, 377, 388, 399, 400, 411, 422, 433, 444, 455, 466, 477, 488, 499, 500, 511, 522, 533, 544, 555, 566, 577, 588, 599, 600, 611, 622, 633, 644, 655, 666, 677, 688, 699, 700, 711, 722, 733, 744, 755, 766, 777, 788, 799, 800, 811, 822, 833, 844, 855, 866, 877, 888, 899, 900, 981, 982, 911, 922, 933, 944, 955, 966, 977, 987, 988, 958, 959
+            <br>El resto de nuemeros que no estan en esa lista y esten entre el rango de 201 y 989 puede usarlos para que el programa le genere los numeros aleatorios</p>
+        <h2>Explicacion para los numeros de Colombia</h2>
+
+            <p>En colombia los numeros de telefonos celulares son 10 dígitos
+            <br>De los cuales los 3 primeros dígitos pertencen al prefijo del operador movil: sea Claro, Tigo, Movistar, etc...
+            <br>Esos 3 dígitos del prefijo del operador van del rango de 300 a 351, pero al igual que en USA hay algunos numeros que se omiten dentro de ese rango, porque no estan en uso y por ende no se deben utilizar porque el programa detectara que no son prefijos validos para colombia
+            <br>A continuacion se muestra los prefijos de operador que si son VALIDOS y puede utilzar para que el programa le genere los numeros aleatorios:
+            <br>300, 301, 302, 302, 303, 304, 305, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 333, 350, 351
+            <br>Estos prefijos si los puede utilizar para generar los numeros aleatorios</p>
+                    
+
+
+    </div>
+    
+</body>
+</html>
